@@ -1,27 +1,17 @@
 import "./App.css";
 import "./index.js";
+import Navbar from "./components/Navbar";
+import TextBlock from "./components/TextBlock";
 
 function App() {
-  const textAreaStyle = {
-    height: "12rem",
-    width: "30rem"
-  };
+
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
-        <div className="container-fluid mynav">
-          <span className="navbar-brand mb-0 h1">TextUtils</span>
+      <Navbar title="TextUtils"/>
+      <div className="container">
+        <TextBlock label="Enter your text"/>
         </div>
-      </nav>
-      <div className="form-floating textArea">
-        <textarea
-          className="form-control"
-          placeholder="Enter the text"
-          id="TextArea"
-          style={textAreaStyle}
-        ></textarea>
-      </div>
-    </>
+  </>
   );
 }
 

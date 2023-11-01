@@ -1,4 +1,6 @@
-
+body{
+  font-family: Agbalumo;
+}
 .navbar{
   padding-top: 0px;
   padding-bottom: 0px;
@@ -18,8 +20,16 @@
 .textArea{
   display: flex;
   justify-content: center;
-  top: 5rem;
+  margin-top: 5rem;
 }
-textarea:focus{
+textarea{
   border: 5px solid #190482;
+  height: 12rem;
+  width: 20rem
+}
+.heading{
+  padding-top: 5rem;
+  padding-right: 3rem;
+  color: #190482;
+  font-size: 48px;
 }
