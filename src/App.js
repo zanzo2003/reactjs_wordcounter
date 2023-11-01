@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./index.js";
 
 function App() {
+  const textAreaStyle = {
+    height: "12rem",
+    width: "30rem"
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav className="navbar bg-body-tertiary">
+        <div className="container-fluid mynav">
+          <span className="navbar-brand mb-0 h1">TextUtils</span>
+        </div>
+      </nav>
+      <div className="form-floating textArea">
+        <textarea
+          className="form-control"
+          placeholder="Enter the text"
+          id="TextArea"
+          style={textAreaStyle}
+        ></textarea>
+      </div>
+    </>
   );
 }
 
